@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Подарок — Путешествие в Москву</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  scroll-behavior: smooth;
+  color: #1c1c1e;
+}
+
+/* ФОН МОСКВЫ */
+body {
+  background:
+    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+    url("https://images.unsplash.com/photo-1542224566-6e85f2e6772f");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* ПОЛУПРОЗРАЧНЫЙ СЛОЙ */
+.overlay {
+  background: rgba(255,255,255,0.92);
+}
+
+/* БАЗОВЫЕ БЛОКИ */
+.section { padding: 24px; }
+.fullscreen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.day-title {
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 18px;
+  margin-bottom: 18px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+}
+
+.center { text-align: center; }
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  border-radius: 14px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.primary { background: #007aff; color: #fff; }
+.secondary { background: #f2f2f7; color: #007aff; }
+
+.note {
+  font-size: 14px;
+  color: #555;
+}
+
+video {
+  width: 100%;
+  border-radius: 20px;
+}
+
+#startBtn { display: none; margin-top: 20px; }
+</style>
+</head>
+
+<body>
+<div class="overlay">
+
+<!-- ВИДЕО -->
+<div class="section fullscreen center">
+  <h1>💙 С днём рождения</h1>
+  <p>У нас для тебя особенный подарок</p>
+
+  <video id="video" controls playsinline>
+    <source src="video.mp4" type="video/mp4">
+  </video>
+
+  <a id="startBtn" class="btn primary" href="#day10">
+    🎁 Получить подарок
+  </a>
+</div>
+
+<!-- 10 ФЕВРАЛЯ -->
+<div id="day10" class="section">
+  <div class="day-title">10 февраля</div>
+
+  <div class="card">
+    <h3>✈️ Перелёт Мурманск → Москва</h3>
+    <p>Вылет 11:40 · Прилёт 14:05</p>
+    <p class="note">Рекомендуем быть в аэропорту за 2 часа до вылета</p>
+    <a class="btn primary" href="ELENA_YUREVNA_VINOGRADOVA.pdf" target="_blank">Открыть авиабилет</a>
+  </div>
+
+  <div class="card">
+    <h3>🚆 Аэроэкспресс</h3>
+    <p>Шереметьево → Белорусский вокзал</p>
+    <p class="note">Ходит каждые 30 минут · В пути ~35 минут</p>
+    <a class="btn primary" href="https://aeroexpress.ru/aero/buy.html" target="_blank">Билет на аэроэкспресс</a>
+    <a class="btn secondary" href="https://yandex.ru/maps/?text=Белорусский%20вокзал">Маршрут</a>
+  </div>
+
+  <div class="card">
+    <h3>🏨 Отель</h3>
+    <p><b>Axis. Moscow Colors 3*</b></p>
+    <p>Цветной бульвар, 25 стр. 1</p>
+    <p>Заселение: после 15:00</p>
+    <p>Выселение: до 12:00</p>
+    <a class="btn primary" href="Voucher_YA-1431-1180-2166.pdf" target="_blank">Открыть ваучер</a>
+    <a class="btn secondary" href="https://yandex.ru/maps/?text=Axis.%20Moscow%20Colors%203*%20Цветной%20бульвар%2025%20стр%201">Маршрут</a>
+  </div>
+
+  <div class="card center">
+    <h3>🍷 Ужины нашими глазами</h3>
+
+    <p><b>Wu Shu</b></p>
+    <a class="btn secondary" href="https://yandex.ru/maps/?text=Wu%20Shu">Маршрут</a>
+
+    <p><b>Sentimenti</b></p>
+    <a class="btn secondary" href="https://yandex.ru/maps/?text=Sentimenti">Маршрут</a>
+
+    <p><b>Frank by Basta</b></p>
+    <a class="btn secondary" href="https://yandex.ru/maps/?text=Frank%20by%20Basta">Маршрут</a>
+  </div>
+
+  <div class="card">
+    <p><b>Но не всё только есть и гулять</b>, мы запланировали и культурную программу, не опаздывай 💙</p>
+    <h3>🎭 Театр на Малой Бронной</h3>
+    <p>Тёплый, душевный спектакль по мотивам фильма «Покровские ворота»</p>
+    <p>Начало в 19:00</p>
+    <a class="btn primary" href="ticket-2260192177.pdf" target="_blank">Открыть билет</a>
+    <a class="btn secondary" href="https://yandex.ru/maps/?text=Театр%20на%20Малой%20Бронной">Маршрут</a>
+  </div>
+</div>
+
+<!-- 11 ФЕВРАЛЯ -->
+<div class="section">
+  <div class="day-title">11 февраля</div>
+
+  <div class="card">
+    <h3>☕ Завтраки</h3>
+
+    <p><b>Ладо</b> — Кривоколенный пер., 9с2</p>
+    <a class="btn secondary" href="https://yandex.ru/maps/?text=Кривоколенный%20переулок%209с2">Маршрут</a>
+
+    <p><b>Киоск 1936</b></p>
+    <a class="btn secondary" href="https://yandex.ru/maps/?text=Киоск%201936">Маршрут</a>
+
+    <p><b>Депо</b></p>
+    <a class="btn secondary" href="https://yandex.ru/maps/?text=Депо%20Москва">Маршрут</a>
+  </div>
+
+  <div class="card center">
+    <h3>🛍 Всем нужен немного шоппинга</h3>
+
+    <p>All We Need</p>
+    <a class="btn secondary" href="https://yandex.ru/maps/?text=All%20We%20Need">Маршрут</a>
+
+    <p>12 Storeez</p>
+    <a class="btn secondary" href="https://yandex.ru/maps/?text=12%20Storeez">Маршрут</a>
+
+    <p>Lime</p>
+    <a class="btn secondary" href="https://yandex.ru/maps/?text=Lime%20магазин">Маршрут</a>
+
+    <p>IDOL</p>
+    <a class="btn secondary" href="https://yandex.ru/maps/?text=Idol%20магазин">Маршрут</a>
+  </div>
+
+  <div class="card center">
+    <h3>🍷 Ужины нашими глазами</h3>
+
+    <p><b>Wu Shu</b></p>
+    <a class="btn secondary" href="https://yandex.ru/maps/?text=Wu%20Shu">Маршрут</a>
+
+    <p><b>Sentimenti</b></p>
+    <a class="btn secondary" href="https://yandex.ru/maps/?text=Sentimenti">Маршрут</a>
+
+    <p><b>Frank by Basta</b></p>
+    <a class="btn secondary" href="https://yandex.ru/maps/?text=Frank%20by%20Basta">Маршрут</a>
+  </div>
+
+  <div class="card">
+    <p><b>Но не всё только есть и гулять</b>, мы запланировали и культурную программу 💙</p>
+    <h3>🎤 ЧУВС — «Что у вас случилось»</h3>
+    <p>
+      ЧУВС — это комедийное шоу с элементом психологии,  
+      где гости могут делиться своими проблемами,  
+      а ведущие постараются их разобрать или обшутить,  
+      но самое главное — не навредить.
+    </p>
+    <p>Начало в 21:30</p>
+    <a class="btn primary" href="Чувс шоу .pdf" target="_blank">Открыть билет</a>
+    <a class="btn secondary" href="https://yandex.ru/maps/?text=StandUp%20Club%20на%20Трубной">Маршрут</a>
+  </div>
+</div>
+
+<!-- 12 ФЕВРАЛЯ -->
+<div class="section">
+  <div class="day-title">12 февраля</div>
+
+  <div class="card">
+    <h3>☕ Завтраки</h3>
+
+    <p>Ладо</p>
+    <a class="btn secondary" href="https://yandex.ru/maps/?text=Кривоколенный%20переулок%209с2">Маршрут</a>
+
+    <p>Киоск 1936</p>
+    <a class="btn secondary" href="https://yandex.ru/maps/?text=Киоск%201936">Маршрут</a>
+
+    <p>Депо</p>
+    <a class="btn secondary" href="https://yandex.ru/maps/?text=Депо%20Москва">Маршрут</a>
+  </div>
+
+  <div class="card">
+    <h3>⏰ Выселение</h3>
+    <p>До 12:00, не забудь вещи 💙</p>
+  </div>
+
+  <div class="card">
+    <h3>🚆 Аэроэкспресс</h3>
+    <p>Рекомендуемый рейс: 14:00</p>
+    <p>Следующий — по расписанию</p>
+    <p class="note">На вокзал лучше приехать за 20 минут заранее</p>
+    <a class="btn primary" href="https://aeroexpress.ru/aero/buy.html">Билет</a>
+    <a class="btn secondary" href="https://yandex.ru/maps/?text=Белорусский%20вокзал">Маршрут</a>
+  </div>
+
+  <div class="card">
+    <h3>✈️ Перелёт Москва → Мурманск</h3>
+    <p class="note">Рекомендуем быть в аэропорту за 2 часа до вылета</p>
+    <a class="btn primary" href="ELENA_YUREVNA_VINOGRADOVA.pdf" target="_blank">
+      Открыть авиабилет
+    </a>
+  </div>
+</div>
+
+</div>
+
+<script>
+const video = document.getElementById("video");
+const btn = document.getElementById("startBtn");
+video.addEventListener("ended", () => {
+  btn.style.display = "block";
+});
+</script>
+
+</body>
+</html>
